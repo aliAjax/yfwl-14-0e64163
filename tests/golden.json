@@ -1,0 +1,60 @@
+{
+  "station_map": [
+    {
+      "trace_code": "TR-14",
+      "site_code": "Cinder",
+      "clock_shift_s": -0.150396
+    },
+    {
+      "trace_code": "TR-27",
+      "site_code": "Elm",
+      "clock_shift_s": 0.599596
+    },
+    {
+      "trace_code": "TR-36",
+      "site_code": "Aster",
+      "clock_shift_s": -0.950792
+    },
+    {
+      "trace_code": "TR-58",
+      "site_code": "Fjord",
+      "clock_shift_s": 0.851235
+    },
+    {
+      "trace_code": "TR-71",
+      "site_code": "Birch",
+      "clock_shift_s": -0.550386
+    },
+    {
+      "trace_code": "TR-83",
+      "site_code": "Dune",
+      "clock_shift_s": 0.200743
+    }
+  ],
+  "velocity": {
+    "surface_km_s": 6.195701,
+    "depth_gradient": 0.00593319
+  },
+  "fit": {
+    "rms_s": 0.000752,
+    "max_abs_s": 0.001482
+  },
+  "mapping": {
+    "TR-36": "Aster",
+    "TR-71": "Birch",
+    "TR-14": "Cinder",
+    "TR-83": "Dune",
+    "TR-27": "Elm",
+    "TR-58": "Fjord"
+  },
+  "shifts": {
+    "TR-14": -0.150396,
+    "TR-27": 0.599596,
+    "TR-36": -0.950792,
+    "TR-58": 0.851235,
+    "TR-71": -0.550386,
+    "TR-83": 0.200743
+  },
+  "surface_km_s": 6.2,
+  "depth_gradient": 0.0065
+}

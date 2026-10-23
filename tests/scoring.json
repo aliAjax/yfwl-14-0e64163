@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "weight_policy": {
+    "version": 1,
+    "basis": "business_priority",
+    "core_min_share": 0.5
+  },
+  "gate_tests": [
+    "test_outputs.py::test_main_survey_gate"
+  ],
+  "tests": {
+    "test_outputs.py::test_mapping_matches_global_differential_cost": {
+      "priority": "core",
+      "weight": 0.09,
+      "rationale": "核心台站双射、非均匀速度、零均值偏移或差分拟合直接决定复核结果。"
+    },
+    "test_outputs.py::test_surface_velocity_matches_truth": {
+      "priority": "core",
+      "weight": 0.09,
+      "rationale": "核心台站双射、非均匀速度、零均值偏移或差分拟合直接决定复核结果。"
+    },
+    "test_outputs.py::test_depth_gradient_matches_truth": {
+      "priority": "core",
+      "weight": 0.09,
+      "rationale": "核心台站双射、非均匀速度、零均值偏移或差分拟合直接决定复核结果。"
+    },
+    "test_outputs.py::test_clock_shifts_match_truth": {
+      "priority": "core",
+      "weight": 0.09,
+      "rationale": "核心台站双射、非均匀速度、零均值偏移或差分拟合直接决定复核结果。"
+    },
+    "test_outputs.py::test_clock_shifts_are_normalized_and_bounded": {
+      "priority": "core",
+      "weight": 0.09,
+      "rationale": "核心台站双射、非均匀速度、零均值偏移或差分拟合直接决定复核结果。"
+    },
+    "test_outputs.py::test_fit_is_small": {
+      "priority": "core",
+      "weight": 0.09,
+      "rationale": "核心台站双射、非均匀速度、零均值偏移或差分拟合直接决定复核结果。"
+    },
+    "test_outputs.py::test_success_is_silent": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_report_schema_is_exact": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_station_map_sorted_and_calibrated": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_common_time_shift_does_not_change_mapping": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_checkpoint_schema_is_exact": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_first_run_appends_one_entry": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_repeated_input_is_idempotent": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_changed_input_appends_new_entry": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_failed_input_preserves_checkpoint": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_checkpoint_fingerprint_is_raw_sha256": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_report_and_checkpoint_are_compact": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_run_finishes_below_public_limit": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_wrong_site_count_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_wrong_event_count_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_duplicate_trace_code_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_missing_nested_key_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_extra_nested_key_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_duplicate_json_key_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_boolean_schema_version_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_nonfinite_arrival_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.019,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_arrival_length_mismatch_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.02,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_coordinate_shape_is_rejected": {
+      "priority": "supporting",
+      "weight": 0.02,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_bounds_are_rejected": {
+      "priority": "supporting",
+      "weight": 0.02,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    },
+    "test_outputs.py::test_input_error_protocol_is_closed": {
+      "priority": "supporting",
+      "weight": 0.02,
+      "rationale": "支撑输入边界、检查点状态、错误副作用或紧凑序列化，保护主结果。"
+    }
+  }
+}
